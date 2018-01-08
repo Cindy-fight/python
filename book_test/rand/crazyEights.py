@@ -89,10 +89,10 @@ def player_turn():
     global deck, p_hand, blocked, up_card, active_suit
     valid_play = False
     is_eight = False
-    print "\nYour hand: "
+    print "\nYour hand: ",
     for card in p_hand:
         print card.short_name,
-    print ' Up card :', up_card.short_name
+    print '\nUp card :', up_card.short_name
     if up_card.rank == '8':
         print 'Suit is ', active_suit
     print 'What would you like to do?',
@@ -140,6 +140,14 @@ def player_turn():
 
 
 # 计算机选择
+"""
+
+计算机出牌规则：
+1、有8就总是出8，如果出8，挑选新花色，规则是 统计计算机手中每种花色各有多少张牌，并选择牌数最多的花色
+2、若没有8，检查所有牌，查看哪些牌可以出，挑选分值最大的牌
+3、若无法出牌，则抽牌。抽排规则和人类玩家一样。
+
+"""
 def computer_turn():
     global c_hand, deck, up_card, active_suit, blocked
     options = []
