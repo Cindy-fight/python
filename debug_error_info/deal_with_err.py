@@ -49,18 +49,14 @@ def bar(s):
 
 def main():
     try:
-        bar('2')
+        res = bar(2)
+        print(res)
     except Exception as e:
         print('Error:', e)
     finally:
         print('finally...')
 
 main()
-
-def test():
-    bar('1')
-
-test()
 
 
 #记录错误

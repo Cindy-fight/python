@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+# ! -*- coding:UTF-8 -*-
+
 print(100+200+300)
 print('100+200+300 = ', 100+200+300)
 print(1024 * 768)
