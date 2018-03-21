@@ -1,4 +1,5 @@
-# _*_ coding:utf-8 _*_
+# !/usr/bin/env python
+# ! -*- coding:UTF-8 -*-
 
 from sqlalchemy import Column, String, create_engine, Integer
 from sqlalchemy.orm import sessionmaker
@@ -23,7 +24,7 @@ DBSession = sessionmaker(bind=engine)
 
 session = DBSession()
 
-new_user = Users(id=7, email='321654@qq.com', passwd='8888', admin=1, name='wtt', image='abc.png', created_at=1510728072)
+new_user = Users(id=3, email='321654@qq.com', passwd='8888', admin=1, name='wtt', image='abc.png', created_at=1510728072)
 
 session.add(new_user)
 

@@ -15,24 +15,24 @@ to_addr = input('To: ')
 smtp_server = input('SMTP server: ')
 
 msg = MIMEMultipart('alternative')  # alternative的作用是：如果收件人无法查看HTML格式的邮件，就可以自动降级查看纯文本邮件
-msg['From'] = _format_addr('Python爱好者 <%s>' % from_addr)
+msg['From'] = _format_addr('WTT test <%s>' % from_addr)
 msg['To'] = _format_addr('管理员 <%s>' % to_addr)
-msg['Subject'] = Header('来自SMTP的问候...', 'utf-8').encode()
+msg['Subject'] = Header('WTT test python ...', 'utf-8').encode()
 
 # 邮件正文是MIMEText
 # 发送正文
 # msg.attach(MIMEText('send with file...', 'plain', 'utf-8'))
 # 发送带有图片的正文
-msg.attach(MIMEText('<html><body><h1>Hello</h1>' +
+msg.attach(MIMEText('<html><body><h1>WTT test python to send email ...</h1>' +
     '<p><img src="cid:0"></p>' +
     '</body></html>', 'html', 'utf-8'))
 
 # 添加附件就是加上一个MIMEBase，从本地读取一个图片
-with open('/Users/admin/Desktop/test.png', 'rb') as f:
+with open('/Users/admin/Desktop/test.jpg', 'rb') as f:
     # 设置附件的MIME和文件名，这里是png类型
-    mime = MIMEBase('image', 'png', filename='test.png')
+    mime = MIMEBase('image', 'png', filename='test.jpg')
     # 加上必要的头信息
-    mime.add_header('Content-Disposition', 'attachment', filename='test.png')
+    mime.add_header('Content-Disposition', 'attachment', filename='test.jpg')
     mime.add_header('Content-ID', '<0>')
     mime.add_header('X-Attachment-Id', '0')
     # 把附件的内容读进来

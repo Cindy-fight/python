@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+# ! -*- coding:UTF-8 -*-
+
 print('Hello, world!')
 print('The quick brown fox', 'jumps over', 'the lazy dog')
 print(300)

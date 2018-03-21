@@ -7,7 +7,6 @@ print(f(5))
 def build(x, y):
     return lambda: x * x + y * y
 
-print(build(2, 3))
-#print(list(build(2, 3)))
-#print(list(map(build, [4, 5])))
+param = build(2, 3)
+print(param)
 
