@@ -1,3 +1,6 @@
+#!/usr/bin/env python
+# ！-*- coding:UTF-8 -*-
+
 import os
 
 print([x for x in os.listdir('.') if os.path.isdir(x)])

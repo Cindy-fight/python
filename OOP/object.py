@@ -1,3 +1,6 @@
+#!/usr/bin/env python
+#！-*- coding:UTF-8 -*-
+
 std1 = {'name':'Michael', 'score':98}
 std2 = {'name':'Bob', 'score':88}
 

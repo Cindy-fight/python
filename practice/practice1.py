@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-#! -*- coding:UTF-8 -*-
+#！-*- coding:UTF-8 -*-
 
 name = input('please enter your name:')
 print('Hello,', name)
