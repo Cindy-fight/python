@@ -60,7 +60,7 @@ def dict2student(d):
 studentStr = '{"name": "Lucy", "age": 22, "score": 100}'
 print(json.loads(studentStr, object_hook=dict2student))
 # print(json.loads(studentStr.dict2student()))
-print(json.dumps(s.student2dict()))
+# print(json.dumps(s.student2dict()))
 # json.dumps(s.student2dict())
 
 

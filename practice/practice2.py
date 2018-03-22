@@ -1,3 +1,6 @@
+#!/usr/bin/env python
+#！-*- coding:UTF-8 -*-
+
 b1 = hex(255)
 b2 = hex(1000)
 print("255转换为十六进制表示的字符串为：'",b1, "'")
@@ -81,29 +84,29 @@ person('Adam', 45, gender = 'F', job = 'Engineer')
 extra = {'city': 'Shanghai', 'job':'Programmer'}
 person('Cindy', 23, **extra)
 
-def worker(name, age, *, city, job):
-    print(name, age, city, job)
-worker('Lisa', 23, city = 'Lanzhou', job = 'Teacher')
+# def worker(name, age, *, city, job):
+#     print(name, age, city, job)
+# worker('Lisa', 23, city = 'Lanzhou', job = 'Teacher')
 
 def f1(a, b, c = 0, *args, **kw):
     print('a=', a, 'b=', b, 'c=', c, 'args=',args, 'kw=', kw)
 
-def f2(a, b, c = 0, *, d, **kw):
-    print('a=', a, 'b=', b, 'c=', c, 'd=',d, 'kw=', kw)
+# def f2(a, b, c = 0, *, d, **kw):
+#     print('a=', a, 'b=', b, 'c=', c, 'd=',d, 'kw=', kw)
 
 f1(1, 2)
 f1(1, 2, 3)
 f1(1, 2, 3, 'a', 'ABC')
 f1(1, 2, 3, 'a', 'ABC', x=99)
-f2(6, 6, 8, d=8)
-f2(6, 6, 8, d=8, ext = None)
+# f2(6, 6, 8, d=8)
+# f2(6, 6, 8, d=8, ext = None)
 
 args = (1, 2, 3, 4)
 kw = {'d':99, 'x':'Hello,World'}
 f1(*args, **kw)
 
-arg = (1, 2, 3)
-f2(*arg, **kw)
+# arg = (1, 2, 3)
+# f2(*arg, **kw)
 
 def fact(n):
     if n == 1:

@@ -1,3 +1,6 @@
+#!/usr/bin/env python
+#！-*- coding:UTF-8 -*-
+
 class Student(object):
     def __init__(self, name):
         self.name = name
@@ -53,8 +56,8 @@ class Fib(object):
             return L
 
 
-for n in Fib():
-    print(n)
+# for n in Fib():
+#     print(n)
 
 f = Fib()
 print(f[10])
@@ -78,8 +81,8 @@ class Fib_2(object):
             raise StopIteration()
         return self.a
 
-for n in Fib_2():
-    print(n)
+# for n in Fib_2():
+#     print(n)
 
 
 class Fib_3(object):
@@ -98,8 +101,8 @@ class Fib_3(object):
             raise StopIteration()
         return self.a
 
-for n in Fib_3():
-    print(n)
+# for n in Fib_3():
+#     print(n)
 
 
 class Student_1(object):

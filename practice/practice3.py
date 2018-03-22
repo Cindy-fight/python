@@ -1,3 +1,6 @@
+#!/usr/bin/env python
+#！-*- coding:UTF-8 -*-
+
 L = []
 
 for x in range(1, 11):
@@ -46,16 +49,16 @@ def fib(max):
 
 print(fib(8))
 
-def fib_2(max):
-    n = 0
-    a = 0
-    b = 1
-    while n < max:
-        yield b
-        a, b = b , a + b
-    return 'done'
-
-print(fib_2(8))
+# def fib_2(max):
+#     n = 0
+#     a = 0
+#     b = 1
+#     while n < max:
+#         yield b
+#         a, b = b , a + b
+#     return 'done'
+#
+# print(fib_2(8))
 
 # g = fib_2(6)
 # while True:
