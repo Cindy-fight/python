@@ -18,5 +18,9 @@ def sign():
         return render_template('sign_ok.html', username=username)
     return render_template('form.html', message='Bad username or password', username=username)
 
+@app.route('/test', methods=['GET'])
+def test():
+    return render_template('test.html');
+
 if __name__ == '__main__':
     app.run()
