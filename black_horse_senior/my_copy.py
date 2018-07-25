@@ -159,4 +159,23 @@ print(test_b)
 # 注意  b = a   和  b = copy.copy(a)  不等价
 
 
+test_c = [55, 66]
+
+test_d = (test_a, test_c)
+print(test_d)
+print(id(test_d))
+
+test_e = copy.copy(test_d)
+print(test_e)
+print(id(test_e))
+# test_d  test_e  指向相同 内容相同
+
+test_c.append(888)
+print(test_d)
+print(test_e)
+
+# test_c 新增值后， test_d  test_e  随之增加
+
+
+
 
