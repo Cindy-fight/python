@@ -1,0 +1,10 @@
+2018-07-26 11:39:00,014 - wtt_log.py[line:59] - INFO:这是 logger info message
+2018-07-26 11:39:00,015 - wtt_log.py[line:60] - WARNING:这是 logger warning message
+2018-07-26 11:39:00,015 - wtt_log.py[line:61] - ERROR:这是 logger error message
+2018-07-26 11:39:00,015 - wtt_log.py[line:62] - CRITICAL:这是 logger critical message
+2018-07-26 11:39:24,714 - wtt_log.py[line:59] - INFO:这是 logger info message
+2018-07-26 11:39:24,715 - wtt_log.py[line:60] - WARNING:这是 logger warning message
+2018-07-26 11:39:24,715 - wtt_log.py[line:61] - ERROR:这是 logger error message
+2018-07-26 11:39:24,715 - wtt_log.py[line:62] - CRITICAL:这是 logger critical message
+2018-07-26 11:39:58,280 - wtt_log.py[line:61] - ERROR:这是 logger error message
+2018-07-26 11:39:58,281 - wtt_log.py[line:62] - CRITICAL:这是 logger critical message
