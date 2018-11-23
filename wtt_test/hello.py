@@ -45,3 +45,25 @@ print(dict)
 日至系统  合作方日志存入失败   王婷婷      已修复        已完成         bug修复                     无
 
 '''
+
+
+print('='*60)
+
+str1 = '{\"picUrl\":\"http://fintek-static.maimob.net/finsys/1542768095721.png\",\"subTitle\":\"ces\",\"actionUrl\":\"http://www.baidu.com\",\"action\":\"1\",\"beginTime\":\"2018-11-21\",\"endTime\":\"2018-12-19\",\"content\":\"ces\"}'
+json1 = json.loads(str1)
+print(json1)
+print(json1.get('actionUrl'))
+
+
+print('='*60)
+ev1 = eval(str1)
+print(ev1)
+print(ev1.get('actionUrl'))
+
+
+print('='*60)
+actionUrl = None
+if actionUrl is not None:
+    print(len(actionUrl))
+
+print('123')

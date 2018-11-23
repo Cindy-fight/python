@@ -1,0 +1,66 @@
+1、检索文档
+GET /megacorp/employee/1
+
+
+2、轻量搜索
+GET /megacorp/employee/_search?q=last_name:Smith
+
+
+3、使用查询表达式搜索
+GET /megacorp/employee/_search
+{
+    "query" : {
+        "match" : {
+            "last_name" : "Smith"
+        }
+    }
+}
+
+
+4、更复杂的搜索
+GET /megacorp/employee/_search
+{
+    "query" : {
+        "bool": {
+            "must": {
+                "match" : {
+                    "last_name" : "smith" (1)
+                }
+            },
+            "filter": {
+                "range" : {
+                    "age" : { "gt" : 30 } (2)
+                }
+            }
+        }
+    }
+}
+
+
+5、全文搜索
+GET /megacorp/employee/_search
+{
+    "query" : {
+        "match" : {
+            "about" : "rock climbing"
+        }
+    }
+}
+
+
+{"startTime": "2018-11-16 00:00:00", "endTime": "2018-11-16 23:59:59", "name": "花袋子", "uv": 658, "pv": 859}
+{"startTime": "2018-11-17 00:00:00", "endTime": "2018-11-17 23:59:59", "name": "花袋子", "uv": 516, "pv": 694}
+{"startTime": "2018-11-18 00:00:00", "endTime": "2018-11-18 23:59:59", "name": "花袋子", "uv": 479, "pv": 629}
+{"startTime": "2018-11-19 00:00:00", "endTime": "2018-11-19 13:00:00", "name": "花袋子", "uv": 221, "pv": 286}
+
+
+
+
+
+2018-11-16 "uv": 658, "pv": 859
+2018-11-17 "uv": 516, "pv": 694
+2018-11-18 "uv": 479, "pv": 629
+
+
+
+
