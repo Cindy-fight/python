@@ -67,3 +67,31 @@ if actionUrl is not None:
     print(len(actionUrl))
 
 print('123')
+
+print('='*70)
+
+a = time.time()
+b = time.localtime(time.time())
+c = time.strftime("%Y-%m-%d", time.localtime(time.time()))
+
+print(a)
+print(b)
+print(c)
+print('='*70)
+
+import datetime
+today = datetime.date.today()
+oneday = datetime.timedelta(days=1)
+yesterday = today - oneday
+
+print(today)
+print(oneday)
+print(yesterday)
+print(type(yesterday))
+print(str(yesterday))
+print(type(yesterday))
+
+timeArr = time.strptime(str(yesterday) + ' 23:59:59', "%Y-%m-%d %H:%M:%S")
+timestamp = int(time.mktime(timeArr))
+
+print(timestamp)
